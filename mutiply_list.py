@@ -16,15 +16,18 @@ while True:
         print("please enter a valid number")
 
 #creating a for loop for the user to add numbers to the list
-list_of_nums = [ ]
-for i in range(length):
+list_of_nums = []
+i = 0
+while i < length:
     try:
         num = int(input(f"What do you want the {i + 1} number in your list to be? "))
+        list_of_nums.append(num)
+        i += 1
     except ValueError:
         print("please enter a valid number")
-    list_of_nums.append(num)
+    
 
-multi_list = [ ]
+multi_list = []
 counter = 0
 while counter < len(list_of_nums):
     multi_list.append(list_of_nums[counter] * factor)
