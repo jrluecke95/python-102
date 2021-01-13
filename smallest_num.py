@@ -19,7 +19,8 @@ for i in range(length):
     except ValueError:
         print("please enter a valid number")
     list_of_nums.append(num)
-
+    
+# looping through list, starting with first number, finding smallest
 for i in list_of_nums:
     small_num = list_of_nums[0]
     if i < small_num:
