@@ -13,12 +13,14 @@ while True:
 list_of_nums = [ ]
 
 # looping through list asking for numbers that the user wants to put in
-for i in range(length):
+i = 0
+while i < length:
     try:
         num = int(input(f"What number do you want the {i + 1} item in the list to be? "))
+        list_of_nums.append(num)
+        i += 1
     except ValueError:
         print("please enter a valid number")
-    list_of_nums.append(num)
 
 print("ok great! Thanks for filling that out. I will not sort the even numbers and print those out for you.")
     
