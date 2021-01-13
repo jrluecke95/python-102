@@ -9,12 +9,20 @@ while True:
     except ValueError:
         print("please enter a valid number")
 
+# creating list
+list_of_nums = [ ]
+
+# looping through list asking for numbers that the user wants to put in
 for i in range(length):
-    list_of_nums = [ ]
     try:
         num = int(input(f"What number do you want the {i + 1} item in the list to be? "))
     except ValueError:
         print("please enter a valid number")
     list_of_nums.append(num)
 
-print(list_of_nums)
+for i in list_of_nums:
+    small_num = list_of_nums[0]
+    if i < small_num:
+        small_num = i
+
+print(small_num)
