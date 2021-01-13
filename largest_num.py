@@ -14,6 +14,7 @@ while True:
 list_of_nums = list(range(num1, num2 + 1))
 large_num = 0
 
+i = list_of_nums[0]
 for i in list_of_nums:
     if i > large_num:
         large_num = i
