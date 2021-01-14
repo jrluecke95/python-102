@@ -1,24 +1,17 @@
-# row = ["--", "--", "--"]
+size = 3
+board = []
 
-# width = 3
-# height = 3
+# prints raw lists that we need for board
+for y in range(size):
+    board.append([])
+    for x in range(size):
+        board[y].append("[%d][%d]" % (y, x))
 
-# for i in range(height):
-#     row[1] = "X"
-#     print(row)
+# formats the board
+for row in board:
+    for column in row:
+        print("%s " % column, end="")
+    print("\n")
 
-space = ["--"]
+print("\n\nPlayer X is moving. \n\n")
 
-width = 3
-height = 3
-
-row1 =[]
-row2 =[]
-row3 =[]
-board = [row1, row2, row3]
-
-for i in range(width):
-    for j in range(height):
-        row1.append(space)
-        
-print(board)
